@@ -1,45 +1,126 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Astroclub Website
+As an amateur stargazer I have had the pleasure of engaging many acquaintances and sharing experiences and events about a topic that without exaggeration could be regarded as the beginning and end of all sciences. Yet for many it remains an abstract and an obscure puzzle not at all helped by the unsociable hours and the very hard to follow text-dense websites associated with this subject. This exercise will be a small attempt to rectify the latter.
 
-Welcome philmurtagh101,
+Astroclub is designed to be a first stage responsive website for an astronomy club based in  Dublin/ Ireland to rapidly illustrate the wow factor of astronomy, deliver some immediate use for first time and regular  visitors and be an entry point for club members and prospective registrants.
+ 
+## UX
+The UX process employs the 5 planes approach as follows:
+### Astroclub Objectives
+* (Enable a site called Astroclub) Provide site visitors and club members with a resource comprising regionally relevant information on astronomy
+* (Provide callout or hero statement) Provide a small impactful showcase of what astronomy is about 
+* (Provide images showcase - NB: no member upload on this version) - Provide a gallery of astrophotography (images contributed by members of club)
+* (Frontend Only - no data capture) Allow members to login / register to join club
+* (Location specific link -from "ClearOutside") Give up to date information on nighttime viewing conditions
+* (Static Only) - Give a monthly Astonomy related events list together with a map of the area's night sky
+* (Not implemented - not feasible at this time) Provide educational guides on observation and types of equipment and setups to use
+* (Not implemented - not feasible at this time)  Be a pointer to a selection of resources on astronomy - education, buy and sell, events and meetups etc.
+* (Not implemented - not feasible at this time)  Provision online tools to help members for observation
+* (Not implemented - not feasible at this time)  Provide database and resources for members to upload contributions, calendar of events etc
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+### Scope
+Scope will be defined in terms of 3 types of user - the CLUB, the member and the visitor. This to be done in the context of those objectives that are 
 
-## Gitpod Reminders
+* As an astronomy club I want to provide in impactful landing page to attract visitors and new members in North Co. Dublin 
+* As a Member/ Visitor I want to access a link to give me  observation conditions in North Co Dublin
+* As a Member/ Visitor a gallery of images to view latest member astrophotography contributions
+* As a Member/Visitor I want to access social media to allow access to relevant clu contributions there. 
+* As a Member/ Visitor I want look up a page to access the latest skymap and events for my area
+* As a member I want to be able to login to Astroclub to access other functions 
+* As a visitor I want to be able to register to become a member of Astroclub
+* As an astronomy club I want to capture registration information to help  build a view of astronomy experience in membership.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+### Structure
+IXD/ Interaction design is for an audience of hobbiests/interested parties who need certain specific information which relates to the time of day and their location. The subject matter is astronomy and the questions being immediately addressed is why? What it like tonight in my area, what can you see? are there examples and finally, how can I become a member?
 
-A blue button should appear to click: *Make Public*,
+IA/ Information architecture will comprise a mix of a simple inked set of pages starting from the home and working out to a number of other facilitory pages.  It is one level deep and the information types comprise links, images, tables and forms.
 
-Another blue button should appear to click: *Open Browser*.
+The layout is HERE
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+In all, there will be 4 web pages.
 
-A blue button should appear to click: *Make Public*,
+### Skeleton
+The  wireframe illustrating the home, yoursky, gallery and members pages is available HERE
 
-Another blue button should appear to click: *Open Browser*.
+The approach is use the Bootstrap Framework leverage its grid structure by dividing site pages into 3 columns (or 3 groups of 4 columns) to allow for a clean responsive design as one moves from a large screen down to mobile phone. Headers and footers will be consistent across all pages and will provide the website navigation elements as well as links to social media. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Surface
 
-## Updates Since The Instructional Video
+As one would expect with this subject matter, the site will be dark with many examples of deep sky and planetary images used as background or as information. It should look relaxed tending towards red spectrum colors for fonts and borders. The aim is to keep text to a minimum.  Images shall be the main conveyor of information.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Features
+ 
+### Existing Features
+- Why Astronomy? - Pictorial carosel illustrating the wow factor
+- Clear Outside? - allow user to check viewing conditions
+- Events for the month - provide table of key highlights
+- Skymap - Show current Skymap with approximate locations (where relevant) of events
+- Gallery - show latest set of astrophotography contributions
+- Member Login/ registration
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Reference the specific project files that implement them?
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Featuresto Implement in future versions
+- Allow site to track your GPS so it can give you specific information relevant to your location - e.g viewing conditions, skymap and events at your precise time/locale.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- Complete the backend to the membership login/ registration
+- Provide mechanism for selected members to upload images 
+- Provide a new section for members on educational how-to and links to other sites of interest
+- Provide membership functionality for astronomy related buy and sell and pointers to related links
+- Implement a community events pages for meet-ups either inside or external to club.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Technologies Used
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+HTML 5
+CSS 3
+Bootstrap 4
+Font Awesome
+Google Fonts
+Balsamique
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+NB: provide a link to  official sites and a short sentence of why it was used.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
---------
+## Testing (Will address as site nears completion)
 
-Happy coding!
+In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+
+Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+
+For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+
+1. Contact form:
+    1. Go to the "Contact Us" page
+    2. Try to submit the empty form and verify that an error message about the required fields appears
+    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
+    4. Try to submit the form with all inputs valid and verify that a success message appears.
+
+In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+
+You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+
+If this section grows too long, you may want to split it off into a separate file and link to it from here.
+
+## Deployment
+
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+
+In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
+- Different values for environment variables (Heroku Config Vars)?
+- Different configuration files?
+- Separate git branch?
+
+In addition, if it is not obvious, you should also describe how to run your code locally.
+
+
+## Credits (I am too vain to give anyone credit :-))
+
+### Content
+- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+
+### Media
+- The photos used in this site were obtained from ...
+
+### Acknowledgements
+
+- I received inspiration for this project from X
