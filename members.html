@@ -67,21 +67,28 @@
                     <div class="col-sm-6">
                         <p class="text-center">Personal Details</p>
                         <form>
+                            <div class="row form-group">
+                                <div class="col">
+                                    <label for="fname">First Name</label>
+                                    <input type="text" class="form-control" placeholder="First name">
+                                </div>
+                                <div class="col">
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Last name">
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label for="mem-email">Email address</label>
                                 <input type="email" class="form-control" id="mem-email" aria-describedby="emailHelp"
                                     placeholder="Enter email">
-                                <small id="mem-emailHelp" class="form-text text-muted">We'll never share your email with
-                                    anyone
-                                    else.</small>
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" placeholder="Password">
+                                <label for="newpassword">Password</label>
+                                <input type="password" class="form-control" id="newpassword" placeholder="Password">
                             </div>
                             <div class="form-group">
-                                <label for="repeatPassword">Repeat Password</label>
-                                <input type="password" class="form-control" id="repeatPassword"
+                                <label for="newrepeatPassword">Repeat Password</label>
+                                <input type="password" class="form-control" id="newrepeatPassword"
                                     placeholder="Repeat Password">
                             </div>
                         </form>
@@ -89,22 +96,53 @@
                     <div class="col-sm-6">
                         <p class="text-center">Experience/ Equipment</p>
                         <form>
+                            <label for="years-experience">Experience</label>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter email">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
-                                    anyone
-                                    else.</small>
+                                <select class="form-control" id="years-experience">
+                                    <option></option>
+                                    <option>Newbie</option>
+                                    <option>1-5 years</option>
+                                    <option>5 years plus</option>
+                                </select>
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" placeholder="Password">
+                                <p>Equipment</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="binoc-chk">
+                                    <label class="form-check-label" for="binoc-chk">
+                                        Have Binoculars?
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="scope-chk">
+                                    <label class="form-check-label" for="scope-chk">
+                                        Have Telescope?
+                                    </label>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <label for="repeatPassword">Repeat Password</label>
-                                <input type="password" class="form-control" id="repeatPassword"
-                                    placeholder="Repeat Password">
+                                 <p>Primary Interest</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="interest"
+                                        id="fun" value="fun" checked>
+                                    <label class="form-check-label" for="fun">
+                                        Fun
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="interest"
+                                        id="astrophoto" value="astrophoto">
+                                    <label class="form-check-label" for="astrophoto">
+                                        Astrophotography
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="interest"
+                                        id="academia" value="academia">
+                                    <label class="form-check-label" for="academia">
+                                        Academic
+                                    </label>
+                                </div>
                             </div>
 
                         </form>
@@ -174,10 +212,10 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                            <label for="msg-email">Email address</label>
+                            <input type="email" class="form-control" id="msg-email"
+                                aria-describedby="email msg" placeholder="Enter email">
+                            <small id="gdpr-mail" class="form-text text-muted">We'll never share your email with
                                 anyone
                                 else.</small>
                         </div>
