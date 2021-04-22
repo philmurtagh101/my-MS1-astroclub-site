@@ -1,3 +1,13 @@
+body {
+    background-image: url('../images/Double_Cluster.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 /* Navbar */
 
 .navalert-container {
@@ -26,4 +36,32 @@
 
 .navbar .navbar-nav a {
     font-weight: bold;
+}
+.bg-shader {
+    background-color: rgba(180, 180, 180, .25);
+}
+
+  .custom-toggler.navbar-toggler {
+            border-color: yellow;
+        }
+
+.custom-toggler .navbar-toggler-icon {
+            background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 0, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+
+.navbar-light .navbar-brand {
+    color: yellow;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255,255,0,1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255,255,0,.5);
+}
+
+.whyastronomy {
+    color: yellow;
 }
