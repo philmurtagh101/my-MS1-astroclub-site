@@ -1,3 +1,8 @@
+.astrobrand {
+    font-size: 30px; 
+    font-family: Zen Dots, cursive;
+}
+
 body {
     background-image: url('../images/Double_Cluster.jpg');
     background-position: center;
@@ -63,5 +68,9 @@ body {
 }
 
 .whyastronomy {
+    color: yellow;
+}
+
+.socialicons h5,i {
     color: yellow;
 }
