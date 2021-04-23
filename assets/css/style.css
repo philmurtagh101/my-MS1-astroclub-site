@@ -59,6 +59,10 @@ body {
     color: yellow;
 }
 
+.navbar-light .navbar-brand:hover {
+    color: #e84610;
+}
+
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: rgba(255,255,0,1);
 }
@@ -72,5 +76,26 @@ body {
 }
 
 .socialicons h5,i {
+    color: yellow;
+}
+
+.socialicons i:hover {
+    color: #e84610;
+}
+
+/* Carousel Slide Caption Styles */
+.carslide1 {
+    color: whitesmoke;
+}
+
+.carslide2 {
+    color: yellow;
+}
+
+.carslide3 {
+    color: navy;
+}
+
+.carslide4 {
     color: yellow;
 }

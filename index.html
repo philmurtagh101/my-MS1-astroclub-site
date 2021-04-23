@@ -78,8 +78,8 @@
                             <!-- Image for First Slide  -->
                             <img class="d-block w-100 border border-light" src="assets/images/M27DumbellSq.jpg"
                                 alt="First slide">
-                                <!-- Caption  -->
-                            <div style="color: whitesmoke;" class="carousel-caption d-md-block">
+                            <!-- Caption  -->
+                            <div class="carslide1 carousel-caption d-md-block">
                                 <h5>It is Beautiful</h5>
                                 <p>The Dumbbell Nebula is just one of many eye catching spectacles</p>
                             </div>
@@ -88,7 +88,7 @@
                             <!-- Image for Second Slide  -->
                             <img class="d-block w-100 border border-light" src="assets/images/NGC6543catseye.jpg"
                                 alt="Second slide">
-                            <div style="color: yellow;" class="carousel-caption d-md-block">
+                            <div  class="carslide2 carousel-caption d-md-block">
                                 <h5>It is Extreme</h5>
                                 <p>The Cat's Eye Nebula, the remnants of an exploded star</p>
                             </div>
@@ -97,7 +97,7 @@
                             <!-- Image for Third Slide  -->
                             <img class="d-block w-100 border border-light" src="assets/images/jupiter.jpg"
                                 alt="Third slide">
-                            <div style="color: navy;" class="carousel-caption d-md-block">
+                            <div class=" carslide3 carousel-caption d-md-block">
                                 <h5>It Ignites Curiosity</h5>
                                 <p>Jupiter, its Red Spot, a storm lasting centuries - why?</p>
                             </div>
@@ -106,7 +106,7 @@
                             <!-- Image for Fourth Slide  -->
                             <img class="d-block w-100 border border-light" src="assets/images/M31Andromedasq.jpg"
                                 alt="Forth slide">
-                            <div style="color: yellow;" class="carousel-caption d-md-block">
+                            <div  class="carslide4 carousel-caption d-md-block">
                                 <h5>It tells us about the past</h5>
                                 <p>Andromeda as it was 2.5 million year ago</p>
                             </div>
@@ -125,21 +125,24 @@
             </div>
         </div>
     </section>
-<!-- Footer container which takes up full width, bg-shader is transparent grey and margin top auto  -->
+    <!-- Footer container which takes up full width, bg-shader is transparent grey and margin top auto  -->
     <footer class="container-fluid bg-shader mt-auto">
         <div class="row" id="footer-details">
             <!-- Again, using a 3 column that only collapses when moving to small screen layout.  
             socialicons class is for the icons across entire footer-->
-            <!-- 1st Column for COntact Us. On selection, a  Modal or form pop is activated  -->
+            <!-- 1st Column for Contact Us  -->
             <div class="col-sm-4 text-center socialicons">
                 <h5 class="whyastronomy">Contact Us</h5>
-                <p><button class="btn p-0" data-toggle="modal" data-target="#signUpModal"><i
+                <!-- Font Awesome Envelop Icon for button  and then a  Modal Form ID=queryModal is activated  -->
+                <p><button class="btn p-0" data-toggle="modal" data-target="#queryModal"><i
                             class="fas fa-envelope fa-2x" aria-hidden="true">
                         </i><span class="sr-only">Leave message</span></button>
                 </p>
             </div>
+            <!-- 2nd Column for Clear Outside Website  -->
             <div class="socialicons col-sm-4 text-center">
                 <h5 class="uppercase general-sub whyastronomy">Clear Outside Tonight?</h5>
+                <!-- Font Awesome Cloud-Moon Icon opens to a new tab a link to Clear Outside website with latitude and longitude of Dublin Ireland 53.52/-6.27 -->
                 <p class="inline-block">
                     <a href="https://clearoutside.com/forecast/53.52/-6.27" target="_blank">
                         <i class="fas fa-cloud-moon fa-2x" aria-hidden="true">
@@ -148,9 +151,10 @@
                     </a>
                 </p>
             </div>
+            <!-- 3rd Column for Social Networking Icons of Facebook, Twitter and Instagram -->
             <div class="socialicons col-sm-4 text-center">
                 <h5 class="uppercase general-sub">Social</h5>
-                <ul class="list-inline social-links">
+                <ul class="list-inline">
                     <li class="list-inline-item">
                         <a target="_blank" href="https://www.facebook.com/">
                             <i class="fab fa-facebook fa-2x" aria-hidden="true"></i>
@@ -174,8 +178,8 @@
         </div>
     </footer>
 
-    <!-- Modal Part -->
-    <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+    <!-- Modal Form Part to handle Contact Us function -->
+    <div class="modal" tabindex="-1" role="dialog" id="queryModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -185,6 +189,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <!-- actual form entry part of the modal. Look for email and free text area 4 rows long  -->
                     <form>
                         <div class="form-group">
                             <label for="queryEmail">Email address</label>
@@ -202,13 +207,15 @@
             </div>
         </div>
     </div>
-
+    <!-- JQuery Library  -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
+    <!-- Popper Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
+    <!--Compiled JS for Bootstrap  -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
