@@ -1,43 +1,61 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
     <meta charset="UTF-8">
+    <!-- Viewport to facilitate responsive functionality-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load Bootstrap's enhanced stylesheet funtionality -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         type="text/css" />
+    <!-- Load Google Fonts for the site logo Zen Dots -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <!-- Load stylesheet for Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
+    <!-- Load stylesheet for Hover Effect functionality -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css" />
+    <!-- Load Site local stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <title>astroclub|members</title>
+    <title>astroclub|home</title>
 </head>
-
-<body style="background-color: darkgrey;" class="d-flex flex-column min-vh-100">
+<!-- Body element will be leveraged same way across all site pages for classes and its own starfield double cluster image background style -->
+<!-- Flex Box container, Set items stacked on top of one another, and fill out to 100% of viewport height  -->
+<body class="d-flex flex-column min-vh-100">
+    <!-- Header will use the bootstrap class for navigation bar or navbar  -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Astroclub</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- navbar across page for large screen sizes with yellow characters via navbar-light grey transparent shade via bg-shader -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-shader">
+            <!-- Astroclub bland with class astrobrand setting font and color  -->
+            <a class="astrobrand navbar-brand" href="index.html">AstroClub</a>
+            <!-- Bootstrap Hamburger nav icon with custom-toggler used to colour the  icon yellow  -->
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <!-- Astroclub bland with class astrobrand setting font and color  -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
+                <!-- Nav bar items arranged in a list to be justified far right with ml-auto when on large screen  -->
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                    <!-- active class allows bolding of active page item  -->
+                    <li class="nav-item ">
+                        <!-- Home Page Select  -->
                         <a class="nav-link" href="index.html">Home </a>
                     </li>
                     <li class="nav-item">
+                        <!-- Your Sky Page Select  -->
                         <a class="nav-link" href="yoursky.html">Your Sky</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery </a>
+                        <!-- Gallery Page Select  -->
+                        <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="members.html">Members<span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <!-- Members Page Select  -->
+                        <a class="nav-link active" href="members.html">Members <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
@@ -153,43 +171,51 @@
         </div>
     </section>
 
-   <footer class="container-fluid bg-light mt-auto">
+   <!-- Footer container which takes up full width, bg-shader is transparent grey and margin top auto  -->
+    <footer class="container-fluid bg-shader mt-auto">
         <div class="row" id="footer-details">
-            <div class="col-sm-4 text-center">
-                <h5>Contact Us</h5>     
-                <p><button class="btn p-0" style="color: #007bff;" data-toggle="modal" data-target="#signUpModal"><i class="fas fa-envelope"
-                            aria-hidden="true">
+            <!-- Again, using a 3 column that only collapses when moving to small screen layout.  
+            socialicons class is for the icons across entire footer-->
+            <!-- 1st Column for Contact Us  -->
+            <div class="col-sm-4 text-center socialicons">
+                <h5 class="whyastronomy">Contact Us</h5>
+                <!-- Font Awesome Envelop Icon for button  and then a  Modal Form ID=queryModal is activated  -->
+                <p><button class="btn p-0" data-toggle="modal" data-target="#queryModal"><i
+                            class="fas fa-envelope fa-2x" aria-hidden="true">
                         </i><span class="sr-only">Leave message</span></button>
-                    </p>
+                </p>
             </div>
-            <div class="col-sm-4 text-center">
-                <h5 class="uppercase general-sub">Clear Outside Tonight?</h5>
+            <!-- 2nd Column for Clear Outside Website  -->
+            <div class="socialicons col-sm-4 text-center">
+                <h5 class="uppercase general-sub whyastronomy">Clear Outside Tonight?</h5>
+                <!-- Font Awesome Cloud-Moon Icon opens to a new tab a link to Clear Outside website with latitude and longitude of Dublin Ireland 53.52/-6.27 -->
                 <p class="inline-block">
                     <a href="https://clearoutside.com/forecast/53.52/-6.27" target="_blank">
-                        <i class="fas fa-cloud-moon" aria-hidden="true">
+                        <i class="fas fa-cloud-moon fa-2x" aria-hidden="true">
                         </i>
                         <span class="sr-only">Clear Outside link.</span>
                     </a>
                 </p>
             </div>
-            <div class="col-sm-4 text-center">
+            <!-- 3rd Column for Social Networking Icons of Facebook, Twitter and Instagram -->
+            <div class="socialicons col-sm-4 text-center">
                 <h5 class="uppercase general-sub">Social</h5>
-                <ul class="list-inline social-links">
+                <ul class="list-inline">
                     <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        <a target="_blank" href="https://www.facebook.com/">
+                            <i class="fab fa-facebook fa-2x" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        <a target="_blank" href="https://www.twitter.com">
+                            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
                             <span class="sr-only">Twitter</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        <a target="_blank" href="https://www.instagram.com">
+                            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
                             <span class="sr-only">Instagram</span>
                         </a>
                     </li>
@@ -197,9 +223,8 @@
             </div>
         </div>
     </footer>
-
-    <!-- Modal Part -->
-    <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+    <!-- Modal Form Part to handle Contact Us function -->
+    <div class="modal" tabindex="-1" role="dialog" id="queryModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -209,36 +234,35 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <!-- actual form entry part of the modal. Look for email and free text area 4 rows long  -->
                     <form>
                         <div class="form-group">
-                            <label for="msg-email">Email address</label>
-                            <input type="email" class="form-control" id="msg-email"
-                                aria-describedby="email msg" placeholder="Enter email">
-                            <small id="gdpr-mail" class="form-text text-muted">We'll never share your email with
-                                anyone
-                                else.</small>
+                            <label for="queryEmail">Email address</label>
+                            <input type="email" class="form-control" id="queryEmail" aria-describedby="queryEmail"
+                                placeholder="Enter email" required>
+                            <small class="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
                         <div class="form-group">
-                            <label for="astroquery">Your query</label>
-                            <textarea class="form-control" id="astroquery" rows="4"></textarea>
+                            <label for="astroQuery">Your message</label>
+                            <textarea class="form-control" id="astroQuery" rows="4" required></textarea>
                         </div>
-                        <button type="submit" class="btn">Submit</button>
+                        <button type="submit" class="btn btn-info">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
+    <!-- JQuery Library  -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
+    <!-- Popper Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
+    <!--Compiled JS for Bootstrap  -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-
 </body>
-
 </html>
