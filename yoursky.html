@@ -63,13 +63,15 @@
         </nav>
     </header>
 
-
+ <!-- Full width container holding table and star chart of the month  -->
     <section class="container-fluid">
         <div class="row">
+            <!-- first half of screen from small size upwards place table of monthly events  -->
             <div class="col-sm-6  p-2">
-                <table class="table table-bordered">
+                <h5 class="whyastronomy">June 2021 Events</h5>
+                <!-- table with whyastronomy class to define color and bg-shade for the transparent background -->
+                <table class="whyastronomy table table-bordered bg-shader">
                     <thead>
-                        <p>June 2021 Events</p>
                         <tr>
                             <th scope="col">What</th>
                             <th scope="col">Where</th>
@@ -91,9 +93,10 @@
                     </tbody>
                 </table>
             </div>
+            <!--Again, another half width container for small devices upwards for star chart of the month  -->
             <div class="col-sm-6 p-2">
-                <img class="d-block w-100 p-2" src="assets/images/skymapsq.jpg" alt="First slide"
-                    style="border-radius: 50%;">
+                <!-- skymapborder class wraps chart in a circular border and green line  -->
+                <img class="d-block w-100 skymapborder" src="assets/images/skymapsq.jpg" alt="June 2021 Sky Map">
             </div>
         </div>
     </section>

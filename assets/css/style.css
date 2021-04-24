@@ -96,3 +96,8 @@ body {
 .carslide4 {
     color: yellow;
 }
+
+.skymapborder {
+    border: 2px solid green; 
+    border-radius: 50%;
+}
