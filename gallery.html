@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="UTF-8">
     <!-- Viewport to facilitate responsive functionality-->
@@ -23,6 +24,7 @@
 </head>
 <!-- Body element will be leveraged same way across all site pages for classes and its own starfield double cluster image background style -->
 <!-- Flex Box container, Set items stacked on top of one another, and fill out to 100% of viewport height  -->
+
 <body class="d-flex flex-column min-vh-100">
     <!-- Header will use the bootstrap class for navigation bar or navbar  -->
     <header>
@@ -61,27 +63,47 @@
             </div>
         </nav>
     </header>
-
+    <!-- full width container  -->
     <section class="container-fluid">
-        <div class="row"> 
-            <div class="col-sm-4 p-2">
-                <img class="d-block w-100 p-2" src="assets/images/M27DumbellSq.jpg" alt="First slide">
-                <img class="d-block w-100 p-2" src="assets/images/M27DumbellSq.jpg" alt="First slide">
-
+        <div class="row">
+            <!-- Container divided into 3 for small display and upwards. Here we have 1st column -->
+            <div class="col-sm-4">
+                <!-- figure element for image with a verticaL padding of 2 top and bottom  -->
+                <figure class="py-2">
+                    <img class="d-block w-100" src="assets/images/M31Andromedasq.jpg" alt="Andromeda">
+                    <!-- Figure caption here -->
+                    <figcaption>Andromeda</figcaption>
+                </figure>
+                <!-- 2nd picture on this column  -->
+                <figure class="py-2">
+                    <img class="d-block w-100" src="assets/images/M27DumbellSq.jpg" alt="First slide">
+                    <figcaption>Dumbell Nebula</figcaption>
+                </figure>
             </div>
-             <div class="col-sm-4 p-2">
-                <img class="d-block w-100 p-2" src="assets/images/M27DumbellSq.jpg" alt="First slide">
-                <img class="d-block w-100 p-2" src="assets/images/M27DumbellSq.jpg" alt="First slide">
-
+            <!-- 2nd Column same as first  -->
+            <div class="col-sm-4">
+                <figure class="py-2">
+                    <img class="d-block w-100" src="assets/images/jupiter.jpg" alt="Jupiter">
+                    <figcaption>Jupiter</figcaption>
+                </figure>
+                <figure class="py-2">
+                    <img class="d-block w-100" src="assets/images/greatredspot.jpg" alt="Red Spot">
+                    <figcaption>Red Spot Jupiter</figcaption>
+                </figure>
             </div>
-             <div class="col-sm-4 p-2">
-                <img class="d-block w-100 p-2" src="assets/images/M27DumbellSq.jpg" alt="First slide">
-                <img class="d-block w-100 p-2" src="assets/images/M27DumbellSq.jpg" alt="First slide">
-
+            <!-- 3rd Column same as first  -->
+            <div class="col-sm-4">
+                <figure class="py-2">
+                    <img class="d-block w-100" src="assets/images/NGC6543catseye.jpg" alt="Cats Eye Nebula">
+                    <figcaption>Cats Eye Nebula</figcaption>
+                </figure>
+                <figure class="py-2">
+                    <img class="d-block w-100" src="assets/images/Sunspot1.jpeg" alt="Sun Corona">
+                    <figcaption>Sun Corona</figcaption>
+                </figure>
             </div>
         </div>
     </section>
-
     <!-- Footer container which takes up full width, bg-shader is transparent grey and margin top auto  -->
     <footer class="container-fluid bg-shader mt-auto">
         <div class="row" id="footer-details">
@@ -176,4 +198,5 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

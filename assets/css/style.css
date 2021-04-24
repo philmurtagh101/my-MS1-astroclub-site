@@ -101,3 +101,17 @@ body {
     border: 2px solid green; 
     border-radius: 50%;
 }
+
+figure {
+  margin: auto;
+}
+
+figcaption {
+  background-color: rgba(180, 180, 180, .8);
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  font-size: small;
+  padding: 2px;
+  text-align: center;
+}
