@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="UTF-8">
     <!-- Viewport to facilitate responsive functionality-->
@@ -23,6 +24,7 @@
 </head>
 <!-- Body element will be leveraged same way across all site pages for classes and its own starfield double cluster image background style -->
 <!-- Flex Box container, Set items stacked on top of one another, and fill out to 100% of viewport height  -->
+
 <body class="d-flex flex-column min-vh-100">
     <!-- Header will use the bootstrap class for navigation bar or navbar  -->
     <header>
@@ -55,31 +57,42 @@
                     </li>
                     <li class="nav-item">
                         <!-- Members Page Select  -->
-                        <a class="nav-link active" href="members.html">Members <span class="sr-only">(current)</span></a>
+                        <a class="nav-link active" href="members.html">Members <span
+                                class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-
+    <!-- full width container for member login or registration section-->
     <section class="container-fluid">
         <div class="row">
-            <div class="col-sm-4">
-                <p class="text-center">Existing Members</p>
+            <!-- take up 1st of screen for smaller displays and upwards for standard login  -->
+            <div class="col-sm-4 whyastronomy">
+                <!-- Existing member login starts here  -->
+                <h5 class="text-center">Existing Members</h5>
                 <form>
+                    <!-- Email Request  -->
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email">
+                        <label for="memberEmail">Email address</label>
+                        <input type="email" class="form-control" id="memberEmail" aria-describedby="memberEmail"
+                            placeholder="Enter email" required>
                     </div>
+                    <!-- Password Request  -->
                     <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <label for="memberPassword">Password</label>
+                        <input type="password" class="form-control" id="memberPassword" placeholder="Password" required>
                     </div>
+                    <!-- SUBMIT and hope for the best :-)  -->
                     <button type="submit" class="btn btn-info">Submit</button>
                 </form>
+                <div class="pt-4 pb-2" id="reginterest">
+                    <!--<button type="submit" class="btn btn-secondary">Want to be a member?</button>-->
+                <p>WannBe?</p>
+                </div>
+                
             </div>
-            <div class="col-sm-8" style="background-color: lightgreen;">
+            <div class="col-sm-8" id="registration">
                 <p class="text-center">Club Registration</p>
                 <div class="row">
                     <div class="col-sm-6">
@@ -139,24 +152,24 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                 <p>Primary Interest</p>
+                                <p>Primary Interest</p>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="interest"
-                                        id="fun" value="fun" checked>
+                                    <input class="form-check-input" type="radio" name="interest" id="fun" value="fun"
+                                        checked>
                                     <label class="form-check-label" for="fun">
                                         Fun
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="interest"
-                                        id="astrophoto" value="astrophoto">
+                                    <input class="form-check-input" type="radio" name="interest" id="astrophoto"
+                                        value="astrophoto">
                                     <label class="form-check-label" for="astrophoto">
                                         Astrophotography
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="interest"
-                                        id="academia" value="academia">
+                                    <input class="form-check-input" type="radio" name="interest" id="academia"
+                                        value="academia">
                                     <label class="form-check-label" for="academia">
                                         Academic
                                     </label>
@@ -171,7 +184,7 @@
         </div>
     </section>
 
-   <!-- Footer container which takes up full width, bg-shader is transparent grey and margin top auto  -->
+    <!-- Footer container which takes up full width, bg-shader is transparent grey and margin top auto  -->
     <footer class="container-fluid bg-shader mt-auto">
         <div class="row" id="footer-details">
             <!-- Again, using a 3 column that only collapses when moving to small screen layout.  
@@ -265,4 +278,5 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

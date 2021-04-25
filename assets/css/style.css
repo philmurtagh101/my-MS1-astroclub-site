@@ -115,3 +115,22 @@ figcaption {
   padding: 2px;
   text-align: center;
 }
+
+.btn-secondary {
+    color: yellow;
+    background-color: #6c757d;
+    border-color: #fdf48a;
+}
+
+#reginterest {
+    color: white
+}
+
+#registration {
+    background-color: lightgreen;
+}
+
+#reginterest ~ #registration:hover {
+    background-color: lightpink;
+}
+
