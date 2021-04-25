@@ -1,8 +1,10 @@
+/* Across the site settings */
+/* Brand font here */
 .astrobrand {
     font-size: 30px; 
     font-family: Zen Dots, cursive;
 }
-
+/* body setting as a background image of the Double Cluster constellation */
 body {
     background-image: url('../images/Double_Cluster.jpg');
     background-position: center;
@@ -10,8 +12,8 @@ body {
     background-size: cover;
 }
 
-/* Navbar */
-
+/* Navigation Bar Settings */
+/*
 .navalert-container {
     position: absolute;
     top: 0;
@@ -21,6 +23,7 @@ body {
     padding-right: 0;
 }
 
+
 .navbar {
     margin-bottom: 0;
     width: 100%;
@@ -28,46 +31,55 @@ body {
     border: 0;
 }
 
+*/
+
+
 .navbar .navbar-toggler {
     border: 0;
 }
-
+/* Navbar dropdown selectors made bold under Brand */
 .navbar .navbar-brand {
     font-weight: bold;
 }
 
+/* Navigation page selectors bold */
 .navbar .navbar-nav a {
     font-weight: bold;
 }
+
+
+/* Navigation bar and footer class grey and semi transparent  */
 .bg-shader {
     background-color: rgba(180, 180, 180, .25);
 }
-
+/* Navigation toggler made yellow */
   .custom-toggler.navbar-toggler {
             border-color: yellow;
         }
-
+/* hamburger icon made yellow */
 .custom-toggler .navbar-toggler-icon {
             background-image: url(
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 0, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
         }
-
+/* Navigation Brand coloured Yellow */
 .navbar-light .navbar-brand {
     color: yellow;
 }
-
+/* Hover Settings thro out site made orange coloured */
 .navbar-light .navbar-brand:hover {
     color: #e84610;
 }
 
+/* active page selected link make Yellow */
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: rgba(255,255,0,1);
 }
-
+/* none selected links made dull yellow */
 .navbar-light .navbar-nav .nav-link {
     color: rgba(255,255,0,.5);
 }
 
+/* General purpsoe class for yellow colour application */
 .whyastronomy {
     color: yellow;
 }
@@ -76,11 +88,13 @@ body {
     color: yellow;
 }
 
+/* footer bar Settings */
+/* yellow icons turned orange on select*/
 .socialicons i:hover {
     color: #e84610;
 }
 
-/* Carousel Slide Caption Styles */
+/* Carousel Slide Caption Styles for home page */
 .carslide1 {
     color: whitesmoke;
 }
@@ -97,11 +111,13 @@ body {
     color: yellow;
 }
 
+/* Yoursky page settings*/
 .skymapborder {
     border: 2px solid green; 
     border-radius: 50%;
 }
 
+/* gallery page settings for images */
 figure {
   margin: auto;
 }
@@ -116,12 +132,13 @@ figcaption {
   text-align: center;
 }
 
+/* Member page Settings */
 .btn-secondary {
     color: yellow;
     background-color: #6c757d;
     border-color: #fdf48a;
 }
-
+/* Blank registration page until "want to be a member" button activates a javascript to change styles and unhide form */
 #registration {
     display:none;
 }
