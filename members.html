@@ -68,7 +68,7 @@
     <section class="container-fluid">
         <div class="row">
             <!-- take up 1st of screen for smaller displays and upwards for standard login  -->
-            <div class="col-sm-4 whyastronomy">
+            <div class="col-sm-4 pt-2 whyastronomy">
                 <!-- Existing member login starts here  -->
                 <h5 class="text-center">Existing Members</h5>
                 <form>
@@ -86,104 +86,110 @@
                     <!-- SUBMIT and hope for the best :-)  -->
                     <button type="submit" class="btn btn-info">Submit</button>
                 </form>
+                <!-- Registration Invitation which unhides the registration form  -->
                 <div class="pt-4 pb-2" id="reginterest">
-                    <!--<button type="submit" class="btn btn-secondary">Want to be a member?</button>-->
-                <p>WannBe?</p>
+                    <button onclick="regForm()" class="btn btn-secondary">Want to be a member?</button>
                 </div>
-                
+                <!-- Registration  -->
             </div>
-            <div class="col-sm-8" id="registration">
-                <p class="text-center">Club Registration</p>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p class="text-center">Personal Details</p>
-                        <form>
+            <!-- Registration form covers latter seven twelfts of pace from smaller displays upwards -->
+            <div class="col-sm-7 py-1 mt-1 whyastronomy" id="registration">
+                <h5 class="text-center">Club Registration</h5>
+                <!-- form starts here -->
+                <form>
+                    <div class="row">
+                        <!-- split form 50-50 to collect name on this side and kit and experience on other -->
+                        <div class="col-sm-6">
+                            <p class="text-center">Personal Details</p>
                             <div class="row form-group">
                                 <div class="col">
-                                    <label for="fname">First Name</label>
-                                    <input type="text" class="form-control" placeholder="First name">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" class="form-control" placeholder="First name" id="firstName"
+                                        required>
                                 </div>
                                 <div class="col">
-                                    <label for="lname">Last Name</label>
-                                    <input type="text" class="form-control" placeholder="Last name">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Last name" id="lastName"
+                                        required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="mem-email">Email address</label>
-                                <input type="email" class="form-control" id="mem-email" aria-describedby="emailHelp"
-                                    placeholder="Enter email">
+                                <label for="regEmail">Email address</label>
+                                <input type="email" class="form-control" placeholder="Enter email" id="regEmail"
+                                    required>
                             </div>
                             <div class="form-group">
-                                <label for="newpassword">Password</label>
-                                <input type="password" class="form-control" id="newpassword" placeholder="Password">
+                                <label for="regPassword">Password</label>
+                                <input type="password" class="form-control" placeholder="Password" id="regPassword"
+                                    required>
                             </div>
                             <div class="form-group">
-                                <label for="newrepeatPassword">Repeat Password</label>
-                                <input type="password" class="form-control" id="newrepeatPassword"
-                                    placeholder="Repeat Password">
+                                <label for="regrepeatPassword">Repeat Password</label>
+                                <input type="password" class="form-control" placeholder="Repeat Password"
+                                    id="regrepeatPassword" required>
                             </div>
-                        </form>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="text-center">Experience/ Equipment</p>
-                        <form>
-                            <label for="years-experience">Experience</label>
+                        </div>
+                        <!-- other half of form looking for experience equipment and interest  -->
+                        <div class="col-sm-6">
+                            <p class="text-center">Experience/ Equipment</p>
+                            <!-- looking for experience  -->
+                            <label for="yearsExperience">Experience</label>
                             <div class="form-group">
-                                <select class="form-control" id="years-experience">
+                                <select class="form-control" id="yearsExperience">
                                     <option></option>
                                     <option>Newbie</option>
                                     <option>1-5 years</option>
                                     <option>5 years plus</option>
                                 </select>
                             </div>
+                            <!-- looking for equipment  -->
                             <div class="form-group">
                                 <p>Equipment</p>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="binoc-chk">
-                                    <label class="form-check-label" for="binoc-chk">
+                                    <input class="form-check-input" type="checkbox" value="" id="binocChk">
+                                    <label class="form-check-label" for="binocChk">
                                         Have Binoculars?
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="scope-chk">
-                                    <label class="form-check-label" for="scope-chk">
+                                    <input class="form-check-input" type="checkbox" value="" id="telescopeChk">
+                                    <label class="form-check-label" for="telescopeChk">
                                         Have Telescope?
                                     </label>
                                 </div>
                             </div>
                             <div class="form-group">
+                                <!-- looking for Interest  -->
                                 <p>Primary Interest</p>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="interest" id="fun" value="fun"
+                                    <input class="form-check-input" type="radio" name="interest" id="funInt" value="fun"
                                         checked>
-                                    <label class="form-check-label" for="fun">
+                                    <label class="form-check-label" for="funInt">
                                         Fun
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="interest" id="astrophoto"
+                                    <input class="form-check-input" type="radio" name="interest" id="astrophotoInt"
                                         value="astrophoto">
-                                    <label class="form-check-label" for="astrophoto">
+                                    <label class="form-check-label" for="astrophotoInt">
                                         Astrophotography
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="interest" id="academia"
+                                    <input class="form-check-input" type="radio" name="interest" id="academiaInt"
                                         value="academia">
-                                    <label class="form-check-label" for="academia">
+                                    <label class="form-check-label" for="academiaInt">
                                         Academic
                                     </label>
                                 </div>
                             </div>
-
-                        </form>
-                        <button type="submit" class="btn btn-info">Submit</button>
+                            <button type="submit" class="btn btn-info">Submit</button>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>
-
     <!-- Footer container which takes up full width, bg-shader is transparent grey and margin top auto  -->
     <footer class="container-fluid bg-shader mt-auto">
         <div class="row" id="footer-details">
@@ -277,6 +283,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <!--JS to unhide the registration form - make it display and then set background color  -->
+    <script>
+        function regForm() {
+            document.getElementById("registration").style.display = "block";
+            document.getElementById("registration").style.background = "rgba(180, 180, 180, .8)";
+        } </script>
 </body>
 
 </html>

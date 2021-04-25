@@ -122,15 +122,8 @@ figcaption {
     border-color: #fdf48a;
 }
 
-#reginterest {
-    color: white
-}
-
 #registration {
-    background-color: lightgreen;
+    display:none;
 }
 
-#reginterest ~ #registration:hover {
-    background-color: lightpink;
-}
 
