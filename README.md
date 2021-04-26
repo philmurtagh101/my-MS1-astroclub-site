@@ -39,10 +39,6 @@ IXD/ Interaction design is for an audience of hobbiests/interested parties who n
 
 IA/ Information architecture will comprise a mix of a simple inked set of pages starting from the home and working out to a number of other facilitory pages.  It is one level deep and the information types comprise links, images, tables and forms.
 
-The layout is HERE
-
-In all, there will be 4 web pages.
-
 ### Skeleton
 The  wireframe illustrating the home, yoursky, gallery and members pages is available HERE
 
@@ -51,6 +47,8 @@ The approach is use the Bootstrap Framework leverage its grid structure by divid
 ### Surface
 
 As one would expect with this subject matter, the site will be dark with many examples of deep sky and planetary images used as background or as information. The colors are primary and bright yellow with shading and borders to help the images pop out more. The aim is to keep text to a minimum.  Images shall be the main conveyor of information.
+
+Structure and wireframes [here](Astroclub.pdf) 
 
 ## Features
  
