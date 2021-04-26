@@ -32,7 +32,6 @@ Scope will be defined in terms of 3 types of user - the CLUB, the member and the
 * As a Member/ Visitor I want look up a page to access the latest skymap and events for my area
 * As a member I want to be able to login to Astroclub to access other functions 
 * As a visitor I want to be able to register to become a member of Astroclub
-* As an astronomy club I want to capture registration information to help  build a view of astronomy experience in membership.
 
 
 ### Structure
@@ -66,7 +65,7 @@ As one would expect with this subject matter, the site will be dark with many ex
 
 Reference the specific project files that implement them?
 
-### Featuresto Implement in future versions
+### Features to Implement in future versions
 - Allow site to track your GPS so it can give you specific information relevant to your location - e.g viewing conditions, skymap and events at your precise time/locale.
 - Complete the backend to the membership login/ registration
 - Complete backend for messages left on site
@@ -90,44 +89,89 @@ NB: provide a link to  official sites and a short sentence of why it was used.
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+### Code Testing
+There were 4 HTML files  and 1 CSS file
+HTML files Index, yoursky, gallery and members.html were put through the W3C Markup Validation Service.  All errors and warnings found were cleared.
+Similarly, CSS file style.css was put through the W3C CSS Validation Service and again all errors and warnings found were cleared.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+### Responsiveness Testing
+Used chrome browser developer tools and checked across a number of devices  Site seemed to collapse as expected as with smaller devices with no overlaps or unsightly issues with text, images or forms. Used https://www.responsivedesignchecker.com to check across a range of devices.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+### Browser compatibility
+Using https://try.powermapper.com/ I checked IE, Edge, Firefox, Safari, Opera, Chrome, IoS and Android. All seem to check ok.
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+### Google Lighthouse Ratings
+The biggest issue raised are the image load times.  Images vary in size and certainly would benefit from re-engineering for resolution and level of compression. 
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+### Behavioural testing
+* As an astronomy club I want to provide in impactful landing page to attract visitors and new members in North Co. Dublin 
+1. Site loads initially on index.html loads header and footer and background picture and plays carousel of 4 slides. Slide captions ok. forward and back arrows ok.
+2. Colours of branding and text with correct fonts and icons and sizing ok.
+3. Navigation bar and links ok and are bold for active page. Hamburger icon activating as one goes to tablet size and correctly activating dropdown menu with link for active site bold.
+4. Brand(Astroclub) and Icons all go to orange on hover.  Brand  as home page redirect is ok.
+5. Moving between pages via the navbar links all checking ok.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+* As a Visitor I want to leave a message with the club
+1. Click on footer Contact Us icon  pops a modal form - OK.  
+2. Click submit on any combination of empty fields error message is shown 
+3. Enter invalid email address format and error message is show
+4. Enter correct email in email field and  enter text in text area and it submits ok
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+* As a Member/ Visitor I want to access a link to give me  observation conditions in North Co Dublin
+1. Click on footer Clear Outsiode icon and it opens NEW tab on browser to https://clearoutside.com/forecast/53.52/-6.27 
+
+* As a Member/ Visitor a gallery of images to view latest member astrophotography contributions
+1. Select "gallery" link in navigation bar.  Redirects to gallery page and shows a gallery of 3 column wide (large display) one column wide other displays
+
+* As a Member/Visitor I want to access social media to allow access to relevant club contributions there. 
+1. On Footer , select any of the social icons - Facebook, Twitter and Instagram and new page is opened in a NEW tab
+
+* As a Member/ Visitor I want look up a page to access the latest skymap and events for my area
+1. On Navbar Select YourSky link.  This redirects to YourSky page which displays a static table and static skymap for month of June 2021.
+
+* As a member I want to be able to login to Astroclub to access other functions 
+1. On Navbar select Members link.  This redirects to the members page.
+2. Click on submit without entering data (email and/or password) and you should get an error message 
+3. Enter incorrect mail format and you get an error message on clicking submit
+4. Enter correct data and it should accept on submit
+
+* As a visitor I want to be able to register to become a member of Astroclub
+1. We are still in the members page and click on Want to be a member? A registration form is revealed (really a hidden image revealed bt HTML DOM CSS modifier)
+2. Click on submit button with any combination of fields firstname, lastname, email, password or repeat passwork empty and it should generate an error message
+3. Enter invalid email format and it should give error message
+4. Check dropdown works and allow change from "newbie"
+5. Check checkboxes for equipment are working
+6. Check radio buttons for primary interest are working and that only one can be selected and that default is fun.
+7. On submit, form dissappears.
 
 ## Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
+Entire code and assets was pushed from GITPOD to the GITHUB repository at https://github.com/philmurtagh101/my-MS1-astroclub-site
+Website was published from within the GITHUB repository to https://philmurtagh101.github.io/my-MS1-astroclub-site/index.html
 
 
-## Credits (I am too vain to give anyone credit :-))
+## Credits 
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+I did not copy any site content knowingly.  That said, many years as an amateur astronomer I am sure I have been influenced by the style and content of many sites which number in their 100s if not thousands.
+
+What became evident as I researched many of the sites, there were features that could be leveraged to enhance one's own site. One trivial example being
+https://clearoutside.com/ which would allow one to add latitude and longitude to customise for your own area.  Other sites offer skymaps that can give all the data to display your own dynamic map on your site (knowledge of using APIs and JS needed)
+
 
 ### Media
-- The photos used in this site were obtained from ...
+Images came from screen copy or image download from the following sites
+
+Sunspot Corona https://en.wikipedia.org/wiki/Sunspot
+NGC6543 Catseye Nebula https://en.wikipedia.org/wiki/Cat%27s_Eye_Nebula
+M31 Andromeda Galaxy https://en.wikipedia.org/wiki/Andromeda_Galaxy
+M27 Dumbell Nebula https://en.wikipedia.org/wiki/Dumbbell_Nebula
+Planet Jupiter https://en.wikipedia.org/wiki/Jupiter
+Great Red Spot https://en.wikipedia.org/wiki/Great_Red_Spot
+NGC 869 and NGC 884 Double Cluster https://en.wikipedia.org/wiki/Double_Cluster
+
+Sky Map came from https://in-the-sky.org/skymap2.php
 
 ### Acknowledgements
-
-- I received inspiration for this project from X
+- To my Mentor Antonija Simic for suggesting the carousel to use for the home page and bringing me on a whirlwind tour of Bootstrap and some testing methods.
+- To Code Institute's Whiskey Drop Lesson for the approach on the Navbar and Modal forms and on the Resume lesson on the footer icons.
+- To Code Institutes tech support for getting over road blocks on getting CDNs loaded.
