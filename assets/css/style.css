@@ -15,6 +15,7 @@ body {
 .navbar .navbar-toggler {
     border: 0;
 }
+
 /* Navbar dropdown selectors made bold under Brand */
 .navbar .navbar-brand {
     font-weight: bold;
@@ -34,7 +35,7 @@ body {
   .custom-toggler.navbar-toggler {
             border-color: #ff0;
         }
-/* hamburger icon made yellow */
+/* hamburger icon made yellow courtesy of https://stackoverflow.com/questions/48820365/bootstrap-4-0-customize-hamburger-icon */
 .custom-toggler .navbar-toggler-icon {
             background-image: url(
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 0, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -55,6 +56,11 @@ body {
 /* none selected links made dull yellow */
 .navbar-light .navbar-nav .nav-link {
     color: rgba(255,255,0,.5);
+}
+
+/* focused links go orangy */
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #e84610;
 }
 
 /* General purpsoe class for yellow colour application */
@@ -91,7 +97,7 @@ body {
 
 /* Yoursky page settings*/
 .skymapborder {
-    border: 2px solid #080 
+    border: 2px solid #080; 
     border-radius: 50%;
 }
 
