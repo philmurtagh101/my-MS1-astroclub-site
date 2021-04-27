@@ -12,28 +12,6 @@ body {
     background-size: cover;
 }
 
-/* Navigation Bar Settings */
-/*
-.navalert-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-
-.navbar {
-    margin-bottom: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .25);
-    border: 0;
-}
-
-*/
-
-
 .navbar .navbar-toggler {
     border: 0;
 }
@@ -54,7 +32,7 @@ body {
 }
 /* Navigation toggler made yellow */
   .custom-toggler.navbar-toggler {
-            border-color: yellow;
+            border-color: #ff0;
         }
 /* hamburger icon made yellow */
 .custom-toggler .navbar-toggler-icon {
@@ -63,7 +41,7 @@ body {
         }
 /* Navigation Brand coloured Yellow */
 .navbar-light .navbar-brand {
-    color: yellow;
+    color: #ff0;
 }
 /* Hover Settings thro out site made orange coloured */
 .navbar-light .navbar-brand:hover {
@@ -81,11 +59,11 @@ body {
 
 /* General purpsoe class for yellow colour application */
 .whyastronomy {
-    color: yellow;
+    color: #ff0;
 }
 
 .socialicons h5,i {
-    color: yellow;
+    color: #ff0;
 }
 
 /* footer bar Settings */
@@ -96,24 +74,24 @@ body {
 
 /* Carousel Slide Caption Styles for home page */
 .carslide1 {
-    color: whitesmoke;
+    color: #f5f5f5;
 }
 
 .carslide2 {
-    color: yellow;
+    color: #ff0;
 }
 
 .carslide3 {
-    color: navy;
+    color:  #ffc0cb;
 }
 
 .carslide4 {
-    color: yellow;
+    color: #ff0;
 }
 
 /* Yoursky page settings*/
 .skymapborder {
-    border: 2px solid green; 
+    border: 2px solid #080 
     border-radius: 50%;
 }
 
@@ -124,7 +102,7 @@ figure {
 
 figcaption {
   background-color: rgba(180, 180, 180, .8);
-  color: black;
+  color: #000;
   font-style: italic;
   font-weight: bold;
   font-size: small;
@@ -134,7 +112,7 @@ figcaption {
 
 /* Member page Settings */
 .btn-secondary {
-    color: yellow;
+    color: #ff0;
     background-color: #6c757d;
     border-color: #fdf48a;
 }

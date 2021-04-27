@@ -41,19 +41,21 @@ IXD/ Interaction design is for an audience of hobbiests/interested parties who n
 
 IA/ Information architecture will comprise a mix of a simple inked set of pages starting from the home and working out to a number of other facilitory pages.  It is one level deep and the information types comprise links, images, tables and forms.
 
-## Project File Structure <img src="/assets/project/AstroFileStructure.jpg"> 
+## Project File Structure 
+<img src="/assets/project/AstroFileStructure.jpg"> 
 
-## Interation/ Site layout <img src="/assets/project/AstroSiteMap.jpg">
+## Interaction/ Site layout 
+<img src="/assets/project/AstroSiteMap.jpg">
 ---
 
 ### Skeleton
 
 The approach is use the Bootstrap Framework leverage its grid structure by dividing site pages into 3 columns (or 3 groups of 4 columns) to allow for a clean responsive design as one moves from a large screen down to mobile phone. Headers and footers will be consistent across all pages and will provide the website navigation elements as well as links to social media and ability to check viewing conditions and leave a message. The following 4 wireframes give the expanded large screen layout
 
-## Astroclub|Home <img src="/assets/project/AstroHome.jpg">
-## Astroclub|yoursky <img src="/assets/project/AstroYourSky.jpg">
-## Astroclub|gallery <img src="/assets/project/AstroGallery.jpg">
-## Astroclub|members <img src="/assets/project/AstroMembers.jpg">
+## astroclub|home <img src="/assets/project/AstroHome.jpg">
+## astroclub|yoursky <img src="/assets/project/AstroYourSky.jpg">
+## astroclub|gallery <img src="/assets/project/AstroGallery.jpg">
+## astroclub|members <img src="/assets/project/AstroMembers.jpg">
 
 When moving to smaller devices(tablets and downwards) the navigation bar would collapse to a hamburger icon.
 
