@@ -1,7 +1,7 @@
 # Astroclub Website
 As an amateur stargazer I have had the pleasure of engaging many acquaintances and sharing experiences and events about a topic that without exaggeration could be regarded as the beginning and end of all sciences. Yet for many it remains an abstract and an obscure puzzle not at all helped by the unsociable hours and the very hard to follow text-dense websites associated with this subject. This exercise will be a small attempt to rectify the latter.
 
-Astroclub is designed to be a first stage responsive website for an astronomy club based in  Dublin/ Ireland to rapidly illustrate the wow factor of astronomy, deliver some immediate use for first time and regular  visitors and be an entry point for club members and prospective registrants.
+Astroclub is designed to be a first version of a responsive website for an astronomy club based in  Dublin/ Ireland to rapidly illustrate the wow factor of astronomy, deliver some immediate use for first time and regular  visitors and be an entry point for club members and prospective registrants.
 
 ---
  
@@ -24,7 +24,7 @@ The UX process employs the 5 planes approach as follows:
 * (Not implemented - not feasible at this time) Capture locale information based on visitor IP and/or GPS to facilitate a geo context for nighttime viewing.
 ---
 ### Scope
-Scope will be defined in terms of 3 types of user - the CLUB, the member and the visitor. This to be done in the context of those objectives that are 
+Scope will be defined in terms of 3 types of user - the CLUB, the member and the visitor. Stories derived to achieve objectives are
 
 1. As an astronomy club I want to provide in impactful landing page to attract visitors and new members in North Co. Dublin 
 2. As a Visitor I want to leave a message with the club
@@ -50,7 +50,7 @@ IA/ Information architecture will comprise a mix of a simple inked set of pages 
 
 ### Skeleton
 
-The approach is use the Bootstrap Framework leverage its grid structure by dividing site pages into 3 columns (or 3 groups of 4 columns) to allow for a clean responsive design as one moves from a large screen down to mobile phone. Headers and footers will be consistent across all pages and will provide the website navigation elements as well as links to social media and ability to check viewing conditions and leave a message. The following 4 wireframes give the expanded large screen layout
+The approach is use the Bootstrap Framework leverage its grid structure by dividing site pages into 2 or 3 containers or grid columns to allow for a clean responsive design as one moves from a large screen down to mobile phone. Headers and footers will be consistent across all pages and will provide the website navigation elements as well as links to social media and ability to check viewing conditions and leave a message. The following 4 wireframes give the expanded large screen layout.  Pink lines indicate the grid/ container structure with a view of how this flows to smaller displays. 
 
 ## astroclub|home <img src="/assets/project/AstroHome.jpg">
 ## astroclub|yoursky <img src="/assets/project/AstroYourSky.jpg">
@@ -66,15 +66,18 @@ As one would expect with this subject matter, the site will be dark with many ex
 ## Features
  
 ### Existing Features
-- Why Astronomy? - Pictorial carosel illustrating the wow factor
-- Clear Outside? - allow user to check viewing conditions - it's a link to the Clear Outside website with geo coordinates supplied for Dublin.
-- Events for the month - provide table of key highlights
-- Skymap - Show current Skymap with approximate locations (where relevant) of events
-- Gallery - show latest set of astrophotography contributions
-- Member Login/ registration
-- Leave a message
+- Why Astronomy? - Pictorial carosel illustrating the wow factor See [home page code](index.html)
+- Clear Outside? - allow user to check viewing conditions - it's a link to the Clear Outside website with geo coordinates supplied for Dublin. [Clear Outside](https://clearoutside.com/)
+- Your Sky [Code here](yoursky.html)
+    - Events for the month - provide table of key highlights
+    - Skymap - Show current Skymap with approximate locations (where relevant) of events
+(and yes, the west is correctly shown to be on the right)
 
-Reference the specific project files that implement them?
+- Gallery - shows latest set of astrophotography contributions. [Code Here](gallery.html)
+- Members Page - [code here](members.html)
+    - Member Login
+    - Registration
+
 
 ### Features to Implement in future versions
 - Allow site to track your GPS so it can give you specific information relevant to your location - e.g viewing conditions, skymap and events at your precise time/locale.
@@ -89,7 +92,11 @@ Reference the specific project files that implement them?
 
 - HTML 5 for main markup
 - - used a HTML DOM to effect CSS changes eg
-```<script>
+```
+ <button onclick="regForm()" class="btn btn-secondary">Want to be a member&#63;</button>
+-
+-
+<script>
         function regForm() {
             document.getElementById("registration").style.display = "block";
             document.getElementById("registration").style.background = "rgba(180, 180, 180, .8)";
@@ -188,31 +195,36 @@ NB : still in "Members" Page
 |On submit with correct inputs|form dissappears|ok|
 
 ## Deployment
-Entire code and assets was pushed from GITPOD to the GITHUB repository at https://github.com/philmurtagh101/my-MS1-astroclub-site
-Website was published from within the GITHUB repository to https://philmurtagh101.github.io/my-MS1-astroclub-site/index.html
+It is assumed that the entire project code and assets was pushed from GITPOD to the GITHUB repository at [My Repo](https://github.com/philmurtagh101/my-MS1-astroclub-site) 
+
+Steps to enable site Deployment
+1. Within [My Repo](https://github.com/philmurtagh101/my-MS1-astroclub-site) select settings
+2. Scroll down to "GitHub Pages" and select "Check it out here!"
+3. Under "Source" select branch "Branch:master" and select folder "/(root)"
+4. Click on "Save" button
+
+Website wwill publish from within the GITHUB repository to [AstroClub](https://philmurtagh101.github.io/my-MS1-astroclub-site/index.html) within 5-10 minutes.
 
 
 ## Credits 
 
 ### Content
-I did not copy any site content knowingly.  That said, many years as an amateur astronomer I am sure I have been influenced by the style and content of many sites which number in their 100s if not thousands.
-
-What became evident as I researched many of the sites was features that could be leveraged to enhance one's own site. One trivial example being
-https://clearoutside.com/ which would allow one to add latitude and longitude to customise for your own area.  Other sites offer skymaps that can give all the data to display your own dynamic map on your site (knowledge of using APIs and JS needed)
+What became evident as I researched many of the sites was the many features that could be leveraged to enhance one's own site. One trivial example being
+[Clear Outside](https://clearoutside.com/) which would allow one to add latitude and longitude to customise for your own area.  Other sites offer skymaps that can give all the data to display your own dynamic map on your site (knowledge of using APIs and JS needed)
 
 
 ### Media
 Images came from screen copy or image download from the following sites
 
-Sunspot Corona https://en.wikipedia.org/wiki/Sunspot
-NGC6543 Catseye Nebula https://en.wikipedia.org/wiki/Cat%27s_Eye_Nebula
-M31 Andromeda Galaxy https://en.wikipedia.org/wiki/Andromeda_Galaxy
-M27 Dumbell Nebula https://en.wikipedia.org/wiki/Dumbbell_Nebula
-Planet Jupiter https://en.wikipedia.org/wiki/Jupiter
-Great Red Spot https://en.wikipedia.org/wiki/Great_Red_Spot
-NGC 869 and NGC 884 Double Cluster https://en.wikipedia.org/wiki/Double_Cluster
+- Sunspot Corona [wiki sunspot](https://en.wikipedia.org/wiki/Sunspot)
+- NGC6543 Catseye [wiki catseye nebula](https://en.wikipedia.org/wiki/Cat%27s_Eye_Nebula)
+- M31 Andromeda Galaxy [wiki andromeda](https://en.wikipedia.org/wiki/Andromeda_Galaxy)
+- M27 Dumbell Nebula [wiki dumbell nebula](https://en.wikipedia.org/wiki/Dumbbell_Nebula)
+- Planet Jupiter [wiki jupiter](https://en.wikipedia.org/wiki/Jupiter)
+- Great Red Spot [wiki red spot](https://en.wikipedia.org/wiki/Great_Red_Spot)
+- NGC 869 and NGC 884 Double Cluster [wiki double cluster](https://en.wikipedia.org/wiki/Double_Cluster)
 
-Sky Map came from https://in-the-sky.org/skymap2.php
+- The Sky Map came from [In the Sky](https://in-the-sky.org/skymap2.php)
 
 ### Acknowledgements
 - To my Mentor Antonija Simic for suggesting the carousel to use for the home page and bringing me on a whirlwind tour of Bootstrap and some testing methods.
