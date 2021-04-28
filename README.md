@@ -52,10 +52,17 @@ IA/ Information architecture will comprise a mix of a simple inked set of pages 
 
 The approach is use the Bootstrap Framework leverage its grid structure by dividing site pages into 2 or 3 containers or grid columns to allow for a clean responsive design as one moves from a large screen down to mobile phone. Headers and footers will be consistent across all pages and will provide the website navigation elements as well as links to social media and ability to check viewing conditions and leave a message. The following 4 wireframes give the expanded large screen layout.  Pink lines indicate the grid/ container structure with a view of how this flows to smaller displays. 
 
-## astroclub|home <img src="/assets/project/AstroHome.jpg">
-## astroclub|yoursky <img src="/assets/project/AstroYourSky.jpg">
-## astroclub|gallery <img src="/assets/project/AstroGallery.jpg">
-## astroclub|members <img src="/assets/project/AstroMembers.jpg">
+## astroclub|home 
+<img src="/assets/project/AstroHome.jpg">
+
+## astroclub|yoursky 
+<img src="/assets/project/AstroYourSky.jpg">
+
+## astroclub|gallery 
+<img src="/assets/project/AstroGallery.jpg">
+
+## astroclub|members 
+<img src="/assets/project/AstroMembers.jpg">
 
 When moving to smaller devices(tablets and downwards) the navigation bar would collapse to a hamburger icon.
 
@@ -91,7 +98,7 @@ As one would expect with this subject matter, the site will be dark with many ex
 ## Technologies Used
 
 - HTML 5 for main markup
-- - used a HTML DOM to effect CSS changes eg
+- - used [HTML DOM](https://www.w3schools.com/js/js_htmldom_css.asp) to effect CSS changes eg
 ```
  <button onclick="regForm()" class="btn btn-secondary">Want to be a member&#63;</button>
 -
@@ -105,11 +112,11 @@ As one would expect with this subject matter, the site will be dark with many ex
 ```
 - CSS 3 for styling
 - [Bootstrap 4.2](https://getbootstrap.com/docs/4.2/getting-started/introduction) as a framework for styling, responsive design and some of the features
-- JavaScript for buttons, modal forms and styling
+- JavaScript for buttons, modal forms and dynamic styling
 - JQuery to support bootstrap
 - [Font Awesome](https://fontawesome.com/) for the Icons - Social (Facebook, Twitter and Instagram), Cloud-Moon for CLear outside and Mail for leaving a message
 - [Google Fonts](https://fonts.google.com/?query=zen+dots) to render the Zen Dots font for the club brand
-- Balsamique for wireframing
+- [Balsamiq](https://balsamiq.com/) for wireframing
 
 ## Testing 
 
